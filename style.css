@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style.css */
+
+.container {
+  max-width: 100w;
+  margin: 0;
+  padding: 0;
+  font-family: "Baskervville SC", serif;
+}
+
+.header {
+  display: flex;
+  background: linear-gradient(45deg, rgb(218, 192, 218), rgb(234, 157, 170));
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.search {
+  margin-left: 1.5em;
+  width: 20%;
+}
+.search input {
+  width: 100%;
+  background-color: transparent;
+}
+.header h1 {
+  margin: 0;
+}
+
+.header .search input {
+  padding: 10px;
+  border: 1px solid black;
+  font: bolder;
+  border-radius: 2px;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header ul li {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  position: absolute;
+  width: 100%;
+}
+
+.nav-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+.header ul li:nth-child(-n + 3) {
+  font-weight: bolder;
+}
+
+.header ul li:nth-child(n + 4) {
+    font-weight: 300; /* Using a numeric weight to ensure it's lighter */
+
+}
+
+.nav-items ul li {
+  cursor: pointer;
+}
+.nav-items ul li:hover {
+  border-bottom: 1px solid white;
+}
+.hero-section {
+  text-align: center;
+}
+
+.hero-imgs {
+  display: flex;
+  justify-content: center;
+  /* gap: 20px; */
+}
+
+.hero-imgs .men {
+  right: 24%;
+  top: 62%;
+}
+.hero-imgs .women {
+  left: 24%;
+  top: 62%;
+}
+
+.hero-imgs img {
+  width: 50%;
+}
+
+.hero-imgs div {
+  position: absolute;
+  width: 10rem;
+  font-size: 1.5rem;
+  color: white;
+  border: 2px solid white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+}
+
+.content {
+  text-align: center;
+  margin: 4rem 0rem;
+  font-size: xx-large;
+  padding: 0 20%;
+  
+}
+.content p{
+    font-size:small;
+}
+
+.exp-btn{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+.content .line {
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin: 20px auto;
+}
+
+.products {
+  margin-top: 2rem;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  justify-content: center;
+}
+
+.product {
+  /* border: 1px solid #ccc; */
+  /* border-radius: 10px; */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  
+  
+}
+
+.product img{
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.product h4,
+.product p {
+  margin:10px;
+  margin-right:7rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0;
+}
+.product h4{
+    font-weight: lighter;
+}
+.product p{
+    margin-right: 15.6rem;
+}
+.save img {
+  width: 1rem;
+  height: 1rem; /* Ensures the image is a consistent size */
+  object-fit: cover; /* Ensures the image fits within the dimensions without distortion */
+  position: absolute;
+  top: 20rem; /* Adjust as needed for proper positioning */
+  right: 10px; /* Adjust as needed for proper positioning */
+  cursor: pointer;
+}
+.new_arrivals{
+    position: relative;
+    background-image: url('./images/arrival.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    height: 100vh; 
+    font-size: 4rem;
+    
+}
+.new_arrivals h1{
+  margin-top:15rem;
+}
+.new_arrivals p{
+  font-size:large;
+}
+.ordercnt {
+  text-align: center;
+  padding: 5rem ;
+  padding-top: 15rem;
+  
+}
+
+.offers{
+  padding-top: 10rem;
+  text-align: center;
+  padding: 5rem 33rem;
+  
+}
+.email input {
+  padding: 0.5rem 5rem;
+  border: 1px solid black;
+}
+.Trial{
+  display: flex;
+  background-color: #dfe3e3;
+  
+  padding: 13rem 8rem;
+  margin-top: 1rem;
+  box-shadow: 0 5rem 13rem -10rem gray;
+  height: 44rem;
+
+  
+}
+
+.Trial h1{
+  padding-right: 26rem;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.Trial img{
+  position: absolute;
+  right: 10rem;
+  border-radius: 3rem;
+  width: 18%;
+}
+.Trial p{
+
+  margin:0;
+  padding-right: 22rem;
+
+}
+.Trial button{
+  width: 24%;
+}
+
+
+.ordercnt {
+  position: relative;
+  background-image: url('./images/order.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+  color: white;
+  min-height: 100vh; 
+  text-align: left;
+  padding-top: 33rem;
+  
+}
+.ordercnt h1{
+  font-size:4rem;
+}
+.new_arrivals{
+  padding-top:6rem;
+}
+.ordercnt p{
+  padding-right:2rem;
+}
+
+.ordercnt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+.ordercnt * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.offers h1{
+  font-size: 3rem;
+}
+.new_arrivals p,
+.offers p {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: small;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.new_arrivals button {
+  padding: 20px 25px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.best_sellers h4,
+.best_sellers p {
+  
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0;
+}
+.best_sellers h4{
+    font-weight: lighter;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-top: 1px solid #ccc;
+}
+.footer-cont{
+  padding: 3.5rem;
+  width: 20%; 
+}
+
+.footer-cont .hash {
+  width: 30%;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  padding: 5px 0;
+}
+
+.footer ul li:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+footer .icons img {
+  width: 4%;
+  margin: 0px -8px;
+}
+
+footer p,
+footer h3 {
+  margin: 10px 0;
+  font-size: small;
+}
